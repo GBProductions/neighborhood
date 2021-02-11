@@ -20,6 +20,10 @@ Describe: beepBoop()
 Test: "If the number 0 is inputted, it should return an array with 0 in it."
 Expect: (beepBoop(0).toEqual([0]))
 
+Describe: rangeCreate()
+Test: "If the number 5 is inputted, it should return an array filled with a range from 0 to 5 in it."
+Expect: (beepBoop(0).toEqual([0]))
+
 
 
 
