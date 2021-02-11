@@ -8,11 +8,18 @@ function rangeCreate(number) {
 	array;
 }
 
-// function beepBoop(0) {
-//     const array = [0]
-//     return array
+// function beepBoop(array) {
+// 	console.log(array.slice(1))
 // }
 
+// function beepBoop(array) {
+// 	array.splice(2, 0, "Beep!")
+//   console.log(array)
+// }
+
+
+// let array = [1,2,3];
+// beepBoop(array);
 
 
 

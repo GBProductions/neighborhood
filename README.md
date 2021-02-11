@@ -16,14 +16,22 @@ __
         * Rule 2: Numbers that contain a 2: all digits are reploaced (all digits) with "Boop!"
         * Rule 3: Numbers that contain a 3: all digits are reploaced (all digits) with "Won't you be my neighbor?"
 
-Describe: beepBoop()
-Test: "If the number 0 is inputted, it should return an array with 0 in it."
-Expect: (beepBoop(0).toEqual([0]))
 
 Describe: rangeCreate()
-Test: "If the number 5 is inputted, it should return an array filled with a range from 0 to 5 in it."
-Expect: (beepBoop(0).toEqual([0]))
+Test: "If the number 0 is inputted, it should return an array with 0 in it."
+Expect: (rangeCreate(0).toEqual([0]))
 
+Test: "If the number 5 is inputted, it should return an array filled with a range from 0 to 5 in it."
+Expect: (rangeCreate(5).toEqual([0,1,2,3,4,5]))
+
+Test: "If the number 5 is inputted, it should return an array filled with a range from 0 to 5 in it."
+Expect: (rangeCreate(5).toEqual([0,1,2,3,4,5]))
+
+
+
+Describe: beepBoop()
+Test: "If the number 3 is inputted, it should return an array filled with a range from 0 to 3 in it, with Rule 1 applied."
+Expect: (rangeCreate(3).toEqual([0,"Beep!",2,3]))
 
 
 
