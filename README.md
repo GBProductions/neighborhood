@@ -10,11 +10,15 @@ Web application that takes an input number and returns a range of numbers. There
 __
 
 ## Specs
+# Rules:
+    * The following rules are written in order ascending of power (i.e. rule #3, overrules rule #2).
+        * Rule 1: Numbers that contain a 1: all digits are reploaced (all digits) with "Beep!"
+        * Rule 2: Numbers that contain a 2: all digits are reploaced (all digits) with "Boop!"
+        * Rule 3: Numbers that contain a 3: all digits are reploaced (all digits) with "Won't you be my neighbor?"
 
-Test #1
-Describe:
-Test:
-Expect:
+Describe: beepBoop()
+Test: "If the number 0 is inputted, it should return an array with 0 in it."
+Expect: (beepBoop(0).toEqual([0]))
 
 
 
