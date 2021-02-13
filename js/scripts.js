@@ -5,7 +5,7 @@ function rangeCreate(number) {
     for (let index = 0; index <= number; index += 1) {
         array.push(index);
     }
-	array;
+	return array;
 }
 
 // function beepBoop(array) {
@@ -24,3 +24,14 @@ function rangeCreate(number) {
 
 
 //User Logic
+
+$(document).ready(function() {
+    $("form#neighborhood").submit(function(event) {
+        event.preventDefault();
+        const number = $("input#range").val();
+        const fullArray = rangeCreate(number);
+        console.log(fullArray);
+
+        $("#print").text(fullArray);
+    })
+})
