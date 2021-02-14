@@ -3,8 +3,8 @@
 
 function rangeCreate(number) {
 	let array = [];
-    for (let index = 0; index <= number; index += 1) {
-        if ([index].includes(3)) {
+    for (let index = 0; index <= number; index ++) {
+        if ([index].toString().includes(3)) {
             array.push(" Won't you be my neighbor?");
         }   else if ([index].includes(2)) {
             array.push(" Boop!");
