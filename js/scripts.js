@@ -4,7 +4,10 @@ function rangeCreate(number) {
 	let array = [];
     for (let index = 0; index <= number; index += 1) {
         array.push((" ") + index);
-        if ([index].includes(1)) {
+        if ([index].includes(2)) {
+            array.splice([index]);
+            array.push(" Boop!");
+        }   else if ([index].includes(1)) {
             array.splice([index]);
             array.push(" Beep!");
         }
