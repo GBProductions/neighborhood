@@ -6,9 +6,9 @@ function rangeCreate(number) {
     for (let index = 0; index <= number; index ++) {
         if ([index].toString().includes(3)) {
             array.push(" Won't you be my neighbor?");
-        }   else if ([index].includes(2)) {
+        }   else if ([index].toString().includes(2)) {
             array.push(" Boop!");
-        }   else if ([index].includes(1)) {
+        }   else if ([index].toString().includes(1)) {
             array.push(" Beep!");
         }   else {
             array.push((" ") + index);

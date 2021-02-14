@@ -39,6 +39,9 @@ Expect: (rangeCreate(3).toEqual([0,"Beep!","Boop!","Won't you be my neighbor?"])
 Test: "If the number 15 is inputted, it should return an array filled with a range from 0 to 15 in it, with Rule 3 applied, and Rule 1 applied, but Rule 3 overrules 1."
 Expect: (rangeCreate(15).toEqual([0,"Beep!",2,"Won't you be my neighbor?"..."Beep!, Beep!,"Won't you be my neighbor?", "Beep!", "Beep!"]))
 
+Test: "If the number 23 is inputted, it should return an array filled with a range from 0 to 15 in it, with Rule 3 applied, and Rule 2 applied, but Rule 3 overrules 2."
+Expect: (rangeCreate(15).toEqual([0,1,"Boop!","Won't you be my neighbor?", ..., 19, "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"]))
+
 ## Setup/Installation Requirements
 
 
