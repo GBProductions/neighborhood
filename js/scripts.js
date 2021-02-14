@@ -28,10 +28,11 @@ function rangeCreate(number) {
 $(document).ready(function() {
     $("form#neighborhood").submit(function(event) {
         event.preventDefault();
-        const number = $("input#range").val();
-        const fullArray = rangeCreate(number);
-        console.log(fullArray);
+        let number = $("input#range").val();
+        console.log(typeof number)
+        // const fullArray = rangeCreate(number);
+        // console.log(fullArray);
 
-        $("#print").text(fullArray);
+        // $("#print").text(fullArray);
     })
 })
