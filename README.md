@@ -27,9 +27,6 @@ Expect: (rangeCreate(5).toEqual([0,1,2,3,4,5]))
 Test: "If the number 5 is inputted, it should return an array filled with a range from 0 to 5 in it."
 Expect: (rangeCreate(5).toEqual([0,1,2,3,4,5]))
 
-
-
-Describe: beepBoop()
 Test: "If the number 3 is inputted, it should return an array filled with a range from 0 to 3 in it, with Rule 1 applied."
 Expect: (rangeCreate(3).toEqual([0,"Beep!",2,3]))
 
